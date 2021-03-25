@@ -1,6 +1,6 @@
 ** This program calculates pi using spring oscillation.  
 
- (if someone could format this, I'll gladly accept a pull request, thank you)  
+ (if someone could format this readme, I'll gladly accept a pull request, thank you)  
 demo: https://codepen.io/MartianLord/full/zYNvgdN  
 
 ** Details of how it works
