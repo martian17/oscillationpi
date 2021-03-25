@@ -47,7 +47,7 @@ var animate = function(t){
     vx += a*dt;
     var x0 = x;
     x += vx*dt;
-    if((x0-n)*(x-n) < 0){//crossed the line
+    if((x0-nlen)*(x-nlen) < 0){//crossed the line
         N += 1;
         var pi = 2*tt*Math.sqrt(k/m);
         console.log(pi);
