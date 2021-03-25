@@ -14,7 +14,7 @@ var vx = 0;
 var k = 5;
 var m = 1;
 
-var N = -1//number times the weight has passed π/2
+var N = 0;
 
 //π=2t√(k/m) when x(t) = n
 
@@ -44,8 +44,8 @@ var calcPosition = function(tt,dt){
     var x0 = x;
     x += vx*dt;
     if((x0-nlen)*(x-nlen) < 0){//crossed the line
-        N += 2;
-        var pi = (2*tt*Math.sqrt(k/m))/N;
+        var pi = tt*Math.sqrt(k/m)/(1/2+N);//(2*tt*Math.sqrt(k/m))/N;
+        N += 1;
         console.log(pi);
         document.getElementById("d2").innerHTML = "π = "+pi;
     }
